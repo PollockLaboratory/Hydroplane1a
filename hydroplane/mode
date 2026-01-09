@@ -1,0 +1,32 @@
+#default or "mode" parameter settings
+
+# input files and folders
+references = ../references/		# folder for reference sequences
+#seqfile = sequences.fasta 		# query sequence file
+seqfile = WuhanHu1		 	# query sequence file
+filetype = fasta			# fasta sequence file; also accepts fastq
+control = testcontrol			# name of control file
+
+# not doing filter in tagvars
+dofilter = F				# utilize seqnamefilter; t, T, true, True, TRUE accepted
+dorevcomp = F				# do all sums and comparisons including reverse compliments of kmers; needed to use QueryNotRef()
+linelimit = 7000			# keep things under control as default
+klen = 14				# kmer length
+
+# output files, folders,  and parameters
+printNs = false				# print Ns in sequences? We normally don't want to
+kminprint = 100				# don’t print kmers less than this to kcount file
+recordseq = 0				# will memorize the input sequence (set 0 for big genomes)
+minline = 0				# line minimum
+
+
+# basic background stuff
+loudness = 2				# control detail of program output, default is murmur (2)
+record_loudness = 4			# loudness for record file, default is talk (2)
+runmode = 1				* runmode of program 1 = basic, 2 =  control via mode file
+printmode = 0				# to print or not to print, that is the question
+
+breakearly = 1				# flag to break off for quick reading first lines
+maxlines = 1000000000000		# just so we don’t get carried away without meaning to
+seed = 248597				# seed for random number generator, if needed
+
