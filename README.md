@@ -1,4 +1,4 @@
-# Hydroplane1a
+# Hydroplane
 Hydroplane is a software platform designed to analyze evolutionary relationships among microbial and viral genomes using metagenomics data. The framework clusters homologous (matching) kmers to identify genome-wide homologous regions and model evolutionary divergence. By assessing the spatial proximity of kmers, Hydroplane detects both identical and divergent sequences, providing detailed insights into genome clusters at multiple hierarchial levels without aligning or tree-building. Hydroplane achieves efficient genome-wide analysis with O(L) complexity, where L is the total length of sequence reads, enabling scalability on standard desktop systems. The implementation in the Go programming language ensures ease of use, minimal reliance on external libraries, and cross-platform compatibility across MacOS, Unix, and Windows. 
 
 see also https://github.com/NWBRaVE/Hydroplane
