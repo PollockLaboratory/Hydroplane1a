@@ -3,6 +3,15 @@ Hydroplane is a software platform designed to analyze evolutionary relationships
 
 see also https://github.com/NWBRaVE/Hydroplane
 
+## Operation and Description
+Code is written in the language Go $^1$. The main program is in folder hydroplane, while the globals and seqmer packages are in globals_hydro and seqmer_hydro respectively, along with their respective required go.mod and go.sum files. The hydroplane folder also contains factory, mode, and control files, which set up the desired directory structure and parameters to run the program. These files should exist in the folder from which you run the program. The reference directory and sequence directory in the example control file are set to ../references/109PromarinusGenomes18Nov2023/ so those directories should exist when running or change the refdir and seqdir parameters as desired to point to reference sequences on your computer from where you will run the program. In the control files, everything after a `#` symbol is a comment, and further description of parameters are contained in the control file and/or as comments in the code. The folder 109PromarinusGenomes18Nov2023/ contains two of the genomes (not all 109) mentioned in the paper for example running purposes, and the program will recursively search for files starting with "GCA" and ending with "fna", which are expected to be in "fasta" format (editable parameters seqprefix, seqext, and geneseqext, respectively). 
+
+Because this is a reasearch program, all program parameters are editable, providing maximum user power and flexibility, but there are inherent dangers in this so you should change them at your own risk. 
+
+The hydroplane program is under continued development, and we aim to provide more examples of running modes with fewer parameters changed in the control file, and further examples and explanation on how to run it. If you need further information or want to encourage us to hurry up, please contact the authors. 
+
+$^1$ Please follow instructions at https://go.dev/doc/install to install Go if not already installed. 
+
 ## References
 Hydroplane I: one-shot probabilistic evolutionary analysis for scalable organizational identification
 
@@ -17,7 +26,7 @@ David D. Pollock, david.pollock@cuanschutz.edu, david.pollock@pnnl.gov (I check 
 
 _In Review_, Jan 2026
 
-### ref format
+### endnote ref format
 
 @article {Johnson2025.10.14.682387,
 	author = {Johnson $^1$, Connah G. M. and Pollock $^2$ $^3$ $^*$, David D.},
