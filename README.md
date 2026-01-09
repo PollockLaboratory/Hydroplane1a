@@ -7,6 +7,7 @@ see also https://github.com/NWBRaVE/Hydroplane
 
 ## References
 Hydroplane I: one-shot probabilistic evolutionary analysis for scalable organizational identification
+
 Connah G. M. Johnson $^1$, David D. Pollock $^2$ $^3$ $^*$ 
 
 $^1$ Physical and Computational Sciences Directorate, Pacific Northwest National Laboratory, Richland, Washington, 99352, USA  
